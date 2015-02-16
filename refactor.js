@@ -360,6 +360,16 @@ var callLater = function(timeout, callback) {
 
 // Put your answer below -------------------------
 
+var callLater = function(timeout, callback) {
+
+// got this from your getData function in the last assignment
+  if (!callback && typeof timeout === "function") {
+     callback = timeout;
+     timeout = 1000;
+   }
+
+  setTimeout(callback, timeout);
+};
 
 // -----------------------------------------------
 
