@@ -84,8 +84,12 @@ setTimeout(function(){
 letter = "z";
 console.log("The letter is", letter);
 
-// Put your answer below -------------------------
+// Put your answer below -------------------------\
 
+console.log("The answer is [c]: z then y");
+// since we reassign letter to z, that gets logged
+// first, then after 1 millisecond the letter y in 
+// the setTimeout gets run
 
 // -----------------------------------------------
 
