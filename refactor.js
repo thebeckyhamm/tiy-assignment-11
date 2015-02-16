@@ -297,6 +297,26 @@ var accelerate = function(amount) {
 
 // Put your answer below -------------------------
 
+// we never defined amount anywhere so a 
+// a number plus something undefined equals NaN
+
+var speed = 0;
+
+var accelerate = function(amount) {
+  if (amount === undefined) {
+    amount = 1;
+  }
+  return speed += amount;
+};
+
+// OR (I just looked this up)
+
+var speed = 0;
+
+var accelerate = function(amount) {
+  amount = amount || 1;
+  return speed += amount;
+};
 
 // -----------------------------------------------
 
