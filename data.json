@@ -16,7 +16,7 @@
       "children": [
         {
           "name": "HDTVs",
-          "chidren": [
+          "children": [
             { "name": "Samsung Smart LED" },
             { "name": "Samsung 8K" },
             { "name": "LG 4K Ultra HD" },
